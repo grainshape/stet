@@ -77,6 +77,9 @@ Before committing, run `pnpm lint`, `pnpm typecheck`, `pnpm test` and `pnpm form
 
 - Conventional commits, enforced by commitlint in a Husky `commit-msg` hook. Scopes are usually
   `core`, `svelte` or `demo`.
+- Both packages are `"private": true` until the first release, so pushes to `main` don't try to
+  publish them. Before the first release: remove `private`, set up npm trusted publishing for both
+  names, and add a changeset.
 - A change to a published package needs a changeset in `.changeset/`. The demo is ignored by changesets.
 - Releases run in GitHub Actions (`.github/workflows/release.yml`) with npm trusted publishing, so
   there's no npm token anywhere. Don't add one.

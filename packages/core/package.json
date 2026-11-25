@@ -2,6 +2,7 @@
   "name": "@grainshape/stet",
   "type": "module",
   "version": "0.0.0",
+  "private": true,
   "description": "Stet core: document model, schema and commands on top of Yjs (framework-agnostic)",
   "author": "John van Dijk",
   "license": "MIT",

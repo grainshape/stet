@@ -2,6 +2,7 @@
   "name": "@grainshape/stet-svelte",
   "type": "module",
   "version": "0.0.0",
+  "private": true,
   "description": "Stet for Svelte 5: render a Stet document with your own components and edit it in place",
   "author": "John van Dijk",
   "license": "MIT",
