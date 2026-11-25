@@ -1,0 +1,50 @@
+{
+  "name": "@grainshape/stet",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Stet core: document model, schema and commands on top of Yjs (framework-agnostic)",
+  "author": "John van Dijk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainshape/stet.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/grainshape/stet/tree/main/packages/core#readme",
+  "bugs": "https://github.com/grainshape/stet/issues",
+  "keywords": [
+    "editor",
+    "yjs",
+    "crdt",
+    "structured-content",
+    "contenteditable"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "pnpm run clean",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "yjs": "^13.6.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.1",
+    "yjs": "^13.6.33"
+  }
+}

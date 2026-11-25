@@ -1,0 +1,17 @@
+NOTICE
+
+Stet (@grainshape/stet, @grainshape/stet-svelte)
+Copyright (c) 2026 John van Dijk
+
+---
+
+Stet's design is inspired by:
+
+  svedit, https://github.com/michael/svedit
+  Copyright (c) Michael Aufreiter and Johannes Mutter. MIT License.
+
+  ProseMirror, https://prosemirror.net
+  Copyright (c) Marijn Haverbeke and others. MIT License.
+
+No code from these projects is included yet. Files containing code derived from them
+will be listed here with what was changed.

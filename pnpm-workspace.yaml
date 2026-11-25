@@ -1,0 +1,11 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+
+# Packages whose install scripts may run
+allowBuilds:
+  esbuild: true
+
+# Security settings
+cleanupUnusedCatalogs: true
+minimumReleaseAge: 1440
